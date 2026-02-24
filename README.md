@@ -3,6 +3,7 @@
 ## Project Overview
 
 This project is an Excel based sales performance dashboard analyzing coffee bean sales across time, geography, customers, and product attributes. The dashboard delivers interactive insights to support business analysis and data driven decision making.
+Project link: https://1drv.ms/x/c/662e9f74a57276b1/IQB3D_VRtGWzS4GWBB6KyyttAZomLnDasJQQxfgPQE_JfdQ?e=VGQaAw
 
 The project demonstrates data analytics skills including data preparation, relational data modeling, KPI development, and dashboard design using Microsoft Excel.
 
@@ -28,8 +29,20 @@ The objective of this project is to analyze coffee bean sales performance and an
 * How roast type, package size, and loyalty status influence sales outcomes
 
 ---
+### Customer Orders and Customer Information Table
 
-## Sales Performance Analysis
+![Customer Orders and Information](images/excel-1.jpg)
+
+This table contains detailed order and customer level information, including Customer ID, Product ID, quantity ordered, roast type, package size, unit price, total sales, customer location, and loyalty card status. It supports customer segmentation, order analysis, and linkage between transactional and customer data.
+
+---
+The dashboard was designed with clarity and usability in mind to support business users.
+
+### Interactive Coffee Sales Dashboard
+
+![Coffee Sales Dashboard](images/excel-2.jpg)
+
+The dashboard displays total coffee bean sales over time by coffee type and includes slicers for roast type, package size, loyalty card status, and date range. All visuals update dynamically based on user selections.
 
 ### Total Sales Over Time by Coffee Type
 
@@ -47,12 +60,6 @@ This line chart displays monthly sales trends by coffee type, including Arabica,
 
 This chart ranks the top five customers based on total sales value. It highlights customer concentration and supports customer value analysis, retention strategy development, and key account identification.
 
----
-### Customer Orders and Customer Information Table
-
-![Customer Orders and Information](images/excel-1.jpg)
-
-This table contains detailed order and customer level information, including Customer ID, Product ID, quantity ordered, roast type, package size, unit price, total sales, customer location, and loyalty card status. It supports customer segmentation, order analysis, and linkage between transactional and customer data.
 
 ---
 
@@ -107,5 +114,4 @@ This table summarizes unit price, price per 100g, and profit values across coffe
 
 ## Professional Relevance
 
-This project demonstrates the ability to transform raw sales data into a structured, executive ready dashboard that supports business analysis and strategic decision making. The skills shown align with expectations for business analyst, data analyst, operations analyst, and revenue focused roles.
-
+This project demonstrates the ability to transform raw sales data into a structured, executive ready dashboard that supports business analysis and strategic decision making. 
