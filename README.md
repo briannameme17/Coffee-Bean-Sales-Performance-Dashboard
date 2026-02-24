@@ -79,11 +79,6 @@ This image shows the interactive slicers used in the dashboard, allowing users t
 * Ensured consistent naming for coffee types, roast types, and countries
 * Validated relationships between customer, product, and order data
 * Verified sales calculations for accuracy
-
----
-
-### Feature Engineering
-
 * Calculated total sales using quantity multiplied by unit price
 * Created price per 100g to allow comparison across package sizes
 * Calculated profit values to support margin analysis
