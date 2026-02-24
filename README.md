@@ -2,144 +2,97 @@
 
 ## Project Overview
 
-This project is an Excel based sales performance dashboard analyzing coffee bean sales across time, geography, customers, and product attributes.
+This project is an Excel based sales performance dashboard analyzing coffee bean sales across time, geography, customers, and product attributes. The dashboard delivers interactive insights to support business analysis and data driven decision making.
 
-Key outcomes of the project include:
-* Clear visibility into sales trends and performance
-* Interactive filtering for business users
-* Actionable insights for customer and product analysis
-
-The project demonstrates data analytics skills including data preparation, relational modeling, KPI development, and dashboard creation using Microsoft Excel.
+The project demonstrates data analytics skills including data preparation, relational data modeling, KPI development, and dashboard design using Microsoft Excel.
 
 ---
 
 ## Business Objective
 
-The objective of this dashboard is to analyze coffee bean sales performance and support business decision making by answering the following questions:
+The objective of this project is to analyze coffee bean sales performance and answer key business questions:
 
 * Which coffee bean types generate the highest revenue
 * How sales performance changes over time
 * Which countries contribute most to total sales
 * Which customers generate the highest sales value
-* How roast type, package size, and loyalty status influence performance
+* How roast type, package size, and loyalty status influence sales outcomes
 
 ---
 
 ## Dataset Structure
 
-The dataset is organized into multiple related tables that reflect a real world sales environment.
-
-### Orders Table
-
-* Product ID
-* Quantity sold
-* Unit price
-* Total sales
-* Coffee type
-* Roast type
-* Package size
-* Country
-* Order date
-
-### Customers Table
-
-* Customer ID
-* Customer name
-* Email
-* Phone number
-* Address and city
-* Country and postcode
-* Loyalty card status
+The dataset is organized into structured tables that reflect a real world sales environment.
 
 ### Products Table
 
-* Coffee type
-* Roast type
-* Package size
-* Unit price
-* Price per 100g
-* Profit calculations
+![Products Table](images/excel-5.jpg)
+
+This table contains product level attributes including coffee type, roast type, package size, unit price, price per 100g, and profit calculations. It supports pricing comparison and profitability analysis across product variations.
+
+---
+
+### Customer Orders and Customer Information Table
+
+![Customer Orders and Information](images/excel-1.jpg)
+
+This table contains detailed order and customer level information, including Customer ID, Product ID, quantity ordered, roast type, package size, unit price, total sales, customer location, and loyalty card status. It supports customer segmentation, order analysis, and linkage between transactional and customer data.
 
 ---
 
 ## Data Preparation and Modeling
 
-### Step 1 Data Cleaning and Standardization
+### Data Cleaning and Standardization
 
-* Reviewed all tables for formatting consistency
 * Standardized date, numeric, and currency fields
 * Ensured consistent naming for coffee types, roast types, and countries
-* Validated data integrity across tables
+* Validated relationships between customer, product, and order data
+* Verified sales calculations for accuracy
 
-### Step 2 Feature Engineering
+---
+
+### Feature Engineering
 
 * Calculated total sales using quantity multiplied by unit price
-* Created price per 100g to enable fair comparison across package sizes
+* Created price per 100g to allow comparison across package sizes
 * Calculated profit values to support margin analysis
 * Extracted year and month from order dates for time based analysis
 
-### Step 3 Data Relationships
+---
 
-* Linked orders table to customers table using customer ID
-* Linked orders table to products table using product ID
-* Structured the data model to support PivotTables and dashboard filtering
+## Dashboard Filters and Interactivity
+
+### Slicers for Business Segmentation
+
+![Dashboard Filters](images/roast,size,loyalty.jpg)
+
+This image shows the interactive slicers used in the dashboard, allowing users to filter results by roast type, package size, and loyalty card status. These filters enable targeted analysis of customer behavior and product performance across different segments.
 
 ---
 
-## Pivot Tables and Aggregations
+## Sales Performance Analysis
 
-PivotTables were created to summarize and analyze sales data.
+### Total Sales Over Time by Coffee Type
 
-* Monthly sales by coffee type
-* Sales totals by country
-* Top five customers by total sales
-* Sales distribution by roast type and size
+![Total Sales Over Time](images/total%20sales%20over%20time.jpg)
 
-### Monthly Sales Pivot Table
-
-![Monthly Sales Pivot Table](images/excel-3.jpg)
-
-This PivotTable aggregates total sales by year, month, and coffee type and serves as the source for time series analysis.
-
----
-
-## Dashboard Design
-
-The dashboard was designed with clarity and usability in mind to support non technical business users.
-
-### Interactive Dashboard
-
-![Coffee Sales Dashboard](images/excel-2.jpg)
-
-Dashboard capabilities include:
-* Slicers for roast type, package size, loyalty card status, and date range
-* Dynamic chart updates based on selections
-* Centralized view of sales performance metrics
-
----
-
-## Key Visualizations
-
-### Total Sales Over Time
-
-![Total Sales Over Time](images/excel-2.jpg)
-
-* Displays monthly sales trends by coffee type
-* Enables comparison of Arabica, Excelsa, Liberica, and Robusta performance
+This line chart displays monthly sales trends by coffee type, including Arabica, Excelsa, Liberica, and Robusta. It enables comparison of performance trends, seasonality, and shifts in customer demand over time.
 
 ### Sales by Country
 
 ![Sales by Country](images/excel-6.jpg)
 
-* Highlights revenue distribution by country
-* Shows concentration of sales in key markets
+This bar chart visualizes total sales by country and highlights geographic revenue distribution. The visualization shows that the United States is the primary revenue driver, followed by Ireland and the United Kingdom.
 
-### Top Five Customers
+---
 
-![Top Five Customers](images/excel-7.jpg)
+## Customer Analysis
 
-* Identifies highest value customers
-* Supports customer segmentation and retention analysis
+### Top Five Customers by Total Sales
+
+![Top Five Customers](images/Screenshot%202026-02-24%20140242.jpg)
+
+This chart ranks the top five customers based on total sales value. It highlights customer concentration and supports customer value analysis, retention strategy development, and key account identification.
 
 ---
 
@@ -149,34 +102,17 @@ Dashboard capabilities include:
 
 ![Product Pricing and Profit Table](images/excel-8.jpg)
 
-Insights supported by this table include:
-* Price comparison across package sizes
-* Margin analysis using price per 100g
-* Identification of high profitability products
-
----
-
-## Customer Data Overview
-
-### Customer Master Table
-
-![Customer Table](images/excel-1.jpg)
-
-Supports analysis related to:
-* Geographic customer distribution
-* Loyalty card segmentation
-* Customer value assessment
+This table summarizes unit price, price per 100g, and profit values across coffee types and package sizes. It supports pricing strategy evaluation, margin comparison, and identification of higher profitability products.
 
 ---
 
 ## Business Insights
 
-Key insights derived from the analysis include:
-
 * Sales are primarily driven by the United States market
-* Arabica and Excelsa consistently generate strong revenue
-* Loyalty card customers frequently appear among top revenue contributors
+* Arabica and Excelsa show strong performance across multiple time periods
+* Loyalty card customers appear frequently among top spending customers
 * Smaller package sizes command higher price per 100g, indicating margin opportunities
+* Sales trends vary by coffee type, suggesting seasonal demand patterns
 
 ---
 
@@ -185,16 +121,16 @@ Key insights derived from the analysis include:
 * Microsoft Excel
 * PivotTables and PivotCharts
 * Interactive slicers and timelines
-* Data modeling and relational structure
+* Relational data modeling
 * Calculated metrics and KPI development
 * Dashboard design and data storytelling
-* Sales and customer analytics
+* Sales, customer, and product analytics
 
 ---
 
 ## Professional Relevance
 
-This project demonstrates the ability to transform raw sales data into a structured dashboard that supports business analysis and decision making. The skills shown align with expectations for business analyst, data analyst, operations analyst, and revenue focused roles.
+This project demonstrates the ability to transform raw sales data into a structured, executive ready dashboard that supports business analysis and strategic decision making. The skills shown align with expectations for business analyst, data analyst, operations analyst, and revenue focused roles.
 
 ---
 
